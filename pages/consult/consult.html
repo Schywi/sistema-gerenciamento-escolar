@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../../styles/consult.css">
+    <title>SGE | Consulta</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../../assets/Logo.svg" alt="">
+            <h1>SGE</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../dashboard/dashboard.html">  
+                         <img src="../../assets/dashboard.svg" alt="">
+                         Dashboard
+                     </a>
+                </li>
+                <li>
+                    <a href="../register/register.html">  
+                         <img src="../../assets/settings.svg" alt="">
+                         Cadastro
+                     </a>
+                </li>
+                <li>
+                    <a href="../consult/consult.html"> 
+                        <img src="../../assets/consult.svg" alt="">
+                        Consulta
+                    </a>
+                </li>
+                <li>
+                    <a href=""> 
+                        <img src="../../assets/report.svg" alt="">
+                        Impressão
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <button><a href="../../index.html">Sair</a></button>
+    </header>
+    <main>
+        
+           <div class="form">
+                <label for="find"> Digite o nome do aluno</label>
+                <div class="find">
+                    <input id="find" type="text">
+                    <button onclick="findStudent()">Pesquisar</button>
+                </div>
+           </div>
+            
+       
+         <div class="list">
+                <ul  >
+                    <li>Nome</li>
+                    <li>Nota</li>
+                    <li>Turma</li>
+                </ul> 
+        </div>
+           
+
+     
+    </main>
+    <script src="../../scripts/search.js"></script>
+</body>
+</html>

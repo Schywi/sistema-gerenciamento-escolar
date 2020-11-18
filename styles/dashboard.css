@@ -1,0 +1,96 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+ body{ 
+    display: flex;
+    background: rgb(146,167,238);
+    background: linear-gradient(90deg, rgba(146,167,238,0.8729691705783876) 0%, rgba(94,129,244,1) 100%); 
+    }
+
+    ul,a{
+    text-decoration: none;
+    list-style: none;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    width: 272px;
+    height:  100vh;
+    background: #FFFFFF;
+    padding: 70px;
+    align-items: center;
+}
+
+
+/* alterar logo*/
+.logo {
+    display: flex;
+    margin-right:10px;
+    margin-bottom: 40px;
+    align-items: center;
+    
+}
+.logo h1{
+    margin-left: 10px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27px;
+}
+.logo img{
+    
+    height: 40px;
+}
+ 
+/*Header*/
+header li  a {
+    margin:50px;
+ 
+    display: flex;
+    align-items: center; 
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #8DA1B5;
+}
+
+header li a:first-child {
+    margin-top:0;
+}
+
+header li  a img { 
+    margin-right: 20px;
+}
+header li a:hover {
+   cursor: pointer;
+}
+
+header button { 
+    cursor: pointer;
+    background: #5E81F4;
+    border-radius: 10px;
+    width: 144px;
+    height: 48px;
+    border:none;
+}
+
+header button  a { 
+    color: white;
+}
+
+main {
+    background: url(../assets/school.jpg) no-repeat right center   ; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+ 
+    width: 100vw;
+    height: 100vh;
+}
