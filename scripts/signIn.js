@@ -20,9 +20,9 @@ const signIn  = () => {
     
     
     if( username === database[0].username && password == database[0].password) {
-       
- 
-       window.location.replace("./pages/dashboard/dashboard.html");
+
+     window.open("./pages/dashboard/dashboard.html");
+
     } else {
         alert("Dados não encontrados, digite novamente")
     }
