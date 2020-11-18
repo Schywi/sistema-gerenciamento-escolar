@@ -22,7 +22,7 @@ const signIn  = () => {
     if( username === database[0].username && password == database[0].password) {
        
        location.href="./pages/dashboard/dashboard.html";
-       debugger;
+     
     } else {
         alert("Dados não encontrados, digite novamente")
     }
