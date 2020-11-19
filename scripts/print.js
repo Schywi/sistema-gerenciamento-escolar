@@ -164,7 +164,7 @@ const domManipulation = () => {
 const searchFunction = () => { 
     const choosed = domManipulation();
     setLabelText();
-    debugger;
+   
     switch (choosed){    
         case "Consultar por aluno":
             findName(databaseStudents);

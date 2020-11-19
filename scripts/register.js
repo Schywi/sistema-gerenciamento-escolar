@@ -71,7 +71,7 @@ const domManipulation = () => {
 // Cadastro de usuarios
 const registerFunction = () => { 
     const {choosed,name,tel,email,address,CPF} = domManipulation();
-    debugger;
+   
     switch (choosed){    
         case "Processo seletivo":
             const register = new register(choosed,name,tel,email,address,CPF)

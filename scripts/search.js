@@ -158,7 +158,7 @@ const setLabelText = () => {
 const searchFunction = () => { 
     const {choosed} = domManipulation();
     setLabelText();
-    debugger;
+   
     switch (choosed){    
         case "Consultar por aluno":
             const studentLabel = document.querySelector("#findLabel");
