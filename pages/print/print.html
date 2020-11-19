@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="../../styles/dashboard.css">
-    <title>SGE | Dashboard</title>
+    <link rel="stylesheet" href="../../styles/consult.css">
+    <title>SGE | Relatório</title>
 </head>
 <body>
     <header>
@@ -14,7 +15,6 @@
             <img src="../../assets/Logo.svg" alt="">
             <h1>SGE</h1>
         </div>
-       
         <nav>
             <ul>
                 <li>
@@ -46,8 +46,45 @@
         <button><a href="../../index.html">Sair</a></button>
     </header>
     <main>
-       
+        
+        <div class="option">
+            <label for="options">Escolha qual cadastro você deseja fazer</label>
+            <select onclick="setLabelText() "name="cadastro" id="choose">
+                <option value="Empity"> </option>
+                <option value="Consultar por aluno">Consultar por aluno</option>
+                <option value="Consultar por turma">Consultar por turma</option>
+                <option value="Consultar por docentes">Consultar por docentes</option>
+            
+    
+            </select>
+                
+        </div>  
+        <button id="newSearch" onclick="location.reload()">Nova Busca</button>
+            
+        <h1 id="findH1"> Relatório</h1>
+         <div class="list">
+                <ul  >
+                    <li>Nome</li>
+                    <li id="nota">Nota</li>
+                    <li id="turma">Turma</li>
+                </ul> 
+                <div class="wrap">
+                    <div class="nomeContainer">
+
+                    </div>
+                    <div class="notaContainer">
+    
+                    </div>
+                    <div class="turmaContainer">
+    
+                    </div>
+                </div>
+              
+        </div>
+           
+
+     
     </main>
-   
+    <script src="../../scripts/print.js"></script>
 </body>
 </html>

@@ -5,7 +5,7 @@
 const database = [
     {
         username:"Kayle",
-        password:123,
+        password: "123",
     }
 ]
  
@@ -13,7 +13,7 @@ const database = [
 
 const signUp = () => {
     const username = prompt("Digite seu nome de usuario:");
-    const password = Number(prompt("Digite sua senha:"));
+    const password = prompt("Digite sua senha:");
    
     const user = {
         username,
@@ -25,8 +25,8 @@ const signUp = () => {
  
 
 const signIn  = () => {
-    const username = prompt("Usuario:")
-    const password = Number(prompt("Senha:"))
+    const username = prompt("Usuario:");
+    const password = prompt("Senha:");
 
     const validateUsername = database.find(users => users.username === username);
     const validatePassword = database.find(users => users.password === password);

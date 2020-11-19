@@ -51,7 +51,7 @@ header li a:hover {
    cursor: pointer;
 }
 
-header button { 
+ button { 
     cursor: pointer;
     background: #5E81F4;
     border-radius: 10px;
@@ -60,6 +60,11 @@ header button {
     border:none;
 }
 
+#newSearch { 
+    margin-bottom: 20px;
+    color: white;
+}
+ 
 header button  a { 
     color: white;
 }
@@ -88,10 +93,32 @@ header button  a {
 /*Main */
 main {
     padding-left:40px;
+    height: 100vh;
 }
 
 main {
     padding: 70px;
+}
+
+.option { 
+    margin-bottom:47px;
+    display: flex;
+    flex-direction: column;
+}
+
+.option label { 
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+
+    color: #011F3B;
+}
+.option select {
+    margin-top:10px;
+    width: 200px;
 }
 
  .form label { 
@@ -126,6 +153,8 @@ main .form {
     
 }
 
+ 
+
 main .list ul {
     margin-top: 40px;
     display: flex;    
@@ -144,5 +173,10 @@ main .list ul li {
     color: white;
 }
  
+
+main .wrap { 
+    display:flex;
+    justify-content: space-between;
+}
 
   

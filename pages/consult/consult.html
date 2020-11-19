@@ -36,9 +36,9 @@
                     </a>
                 </li>
                 <li>
-                    <a href=""> 
+                    <a href="../print/print.html"> 
                         <img src="../../assets/report.svg" alt="">
-                        Impressão
+                        Relatório
                     </a>
                 </li>
             </ul>
@@ -46,12 +46,24 @@
         <button><a href="../../index.html">Sair</a></button>
     </header>
     <main>
-        
+        <div class="option">
+            <label for="options">Escolha qual cadastro você deseja fazer</label>
+            <select onclick="setLabelText() "name="cadastro" id="choose">
+                <option value="Empity"> </option>
+                <option value="Consultar por aluno">Consultar por aluno</option>
+                <option value="Consultar por turma">Consultar por turma</option>
+                <option value="Consultar por docentes">Consultar por docentes</option>
+              
+    
+            </select>
+        </div>
+       
            <div class="form">
-                <label for="find"> Digite o nome do aluno</label>
+                <label for="find" id="findLabel"> Consulta </label>
                 <div class="find">
                     <input id="find" type="text">
-                    <button onclick="findStudent()">Pesquisar</button>
+                    <button onclick="searchFunction()">Pesquisar</button>
+                    <button onclick="location.reload()">Nova consulta</button>
                 </div>
            </div>
             
@@ -59,8 +71,8 @@
          <div class="list">
                 <ul  >
                     <li>Nome</li>
-                    <li>Nota</li>
-                    <li>Turma</li>
+                    <li id="nota">Nota</li>
+                    <li id="turma">Turma</li>
                 </ul> 
         </div>
            

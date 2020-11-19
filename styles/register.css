@@ -19,7 +19,7 @@ header{
     display: flex;
     flex-direction: column;
     width: 272px;
-    height:  103vh;
+    height:  100vh;
     background: #FFFFFF;
     padding: 70px;
     align-items: center;
@@ -86,6 +86,8 @@ header button  a {
 
 main {
     padding-left:40px;
+    height: 100vh;
+    
 }
 
 main {
