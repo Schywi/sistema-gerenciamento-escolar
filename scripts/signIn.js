@@ -1,5 +1,6 @@
  
  const button = document.querySelector("button");
+ const register = document.querySelector("#cadastrar");
  
 const database = [
     {
@@ -9,17 +10,28 @@ const database = [
 ]
  
 
-const signIn  = () => {
-   
-   
-    const username = prompt("Digite seu nome de usuario:")
-    const password = Number(prompt("Digite sua senha:"))
 
-    console.log(username);
-    console.log(password );
+const signUp = () => {
+    const username = prompt("Digite seu nome de usuario:");
+    const password = Number(prompt("Digite sua senha:"));
+   
+    const user = {
+        username,
+        password,
+    }
+     
+    database.push(user);
+}
+ 
+
+const signIn  = () => {
+    const username = prompt("Usuario:")
+    const password = Number(prompt("Senha:"))
+
+    const validateUsername = database.find(users => users.username === username);
+    const validatePassword = database.find(users => users.password === password);
     
-    
-    if( username === database[0].username && password == database[0].password) {
+    if(validateUsername && validatePassword) {
 
      window.open("./pages/dashboard/dashboard.html");
 
@@ -31,4 +43,4 @@ const signIn  = () => {
  
 
 button.addEventListener("click",signIn);
- 
+register.addEventListener("click",signUp);
